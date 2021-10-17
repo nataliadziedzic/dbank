@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+html {
+  overflow: hidden;
+  font-size: 16px;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+    to right top,
+    #7ca5c9,
+    #7193b0,
+    #678197,
+    #5d707f,
+    #535f68,
+    #566068,
+    #586268,
+    #5b6368,
+    #6c777f,
+    #7d8c96,
+    #8fa1ae,
+    #a1b6c7
+  );
+}
+.header {
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: #1a1a1a94;
+  color: #10adff;
+  font-size: 1.5rem;
+letter-spacing: 1px;
+}
