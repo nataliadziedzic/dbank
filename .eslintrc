@@ -1,0 +1,17 @@
+{
+  "overrides": [
+    {
+      "files": ["*.spec.js"],
+      "rules": {
+        "jest/valid-expect": 0
+      }
+    }
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2017
+  },
+
+  "env": {
+    "es6": true
+  }
+}
