@@ -1,3 +1,6 @@
+import { createGlobalStyle } from 'styled-components'
+
+export const GlobalStyle = createGlobalStyle`
 * {
   box-sizing: border-box;
   margin: 0;
@@ -28,11 +31,20 @@ body {
     #a1b6c7
   );
 }
+#root, .App {
+  height: 100%;
+  width: 100%;
+}
+h1,
+h2, .header {
+  letter-spacing: 1px;
+  text-shadow: 1px 1px #000;
+}
 .header {
   width: 100%;
   padding: 1rem 2rem;
   background-color: #1a1a1a94;
-  color: #10adff;
   font-size: 1.5rem;
-letter-spacing: 1px;
+  color: #fff;
 }
+`

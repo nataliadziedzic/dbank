@@ -1,10 +1,11 @@
-import React from 'react'
-import './App.css'
+import React, { useEffect } from 'react'
+import Bank from '../Bank/Bank'
 
-function App() {
+const App = () => {
   return (
     <div className='App'>
       <header className='header'>DBank</header>
+      <Bank />
     </div>
   )
 }
