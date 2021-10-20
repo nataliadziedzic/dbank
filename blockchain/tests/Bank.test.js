@@ -1,9 +1,9 @@
+/* eslint-disable jest/valid-expect */
 const { expect } = require('chai');
 const { ethers } = require('hardhat');
 
 describe('Bank dapp', () => {
   let bank, token, owner, address_1;
-  let addresses
 
   beforeEach(async () => {
       const bankContract = await ethers.getContractFactory("Bank");
@@ -14,7 +14,7 @@ describe('Bank dapp', () => {
       token = await tokenContract.deploy(bank.address);
       await token.deployed();
 
-      [owner, address_1, ...addresses] = await ethers.getSigners()
+      [owner, address_1] = await ethers.getSigners()
       
     })
 
