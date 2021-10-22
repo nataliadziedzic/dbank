@@ -35,6 +35,18 @@ body {
   height: 100%;
   width: 100%;
 }
+button {
+  background: transparent;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;  
+  padding: .8rem 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  font-size: .8rem;
+}
 h1,
 h2, .header {
   letter-spacing: 1px;
@@ -46,5 +58,8 @@ h2, .header {
   background-color: #1a1a1a94;
   font-size: 1.5rem;
   color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 `
