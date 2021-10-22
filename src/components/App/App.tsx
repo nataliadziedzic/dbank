@@ -1,24 +1,23 @@
 import React, { useEffect } from 'react'
+import { Web3ReactProvider } from '@web3-react/core'
+
+import { getLibrary } from '../../services/getLibrary'
+import { ethereumOnChanges } from '../../services/ethereumOnChanges'
+
 import Bank from '../Bank/Bank'
 
 const App = () => {
-  const ethereum = (window as any).ethereum;
-  useEffect(() => {
-      if (ethereum) {
-        ethereum.on('accountsChanged', () => {
-          window.location.reload()
-        })
-        ethereum.on('chainChanged', () => {
-          window.location.reload()
-        })
-      }
-  }, [ethereum])
+  const ethereum = (window as any).ethereum
+
+  useEffect(ethereumOnChanges, [ethereum])
 
   return (
-    <div className='App'>
-      <header className='header'>DBank</header>
-      <Bank />
-    </div>
+    <Web3ReactProvider getLibrary={getLibrary}>
+      <div className='App'>
+        <header className='header'>DBank</header>
+        <Bank />
+      </div>
+    </Web3ReactProvider>
   )
 }
 
