@@ -46,4 +46,14 @@ export const InputWrapper = styled.div`
     font-size: 1.6rem;
     margin-bottom: 1rem;
   }
+  button {
+    height: 40px;
+    min-width: 120px;
+    margin-left: 1rem;  
+    background-color: #ce9c069e;
+    transition: .3s;
+    &:hover {
+      background-color: #ce9c06c4;
+    }
+  }
 `
